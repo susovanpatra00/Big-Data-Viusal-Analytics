@@ -1,1 +1,1 @@
-# Data Viusal Analytics with vtk & scipy in python
+# Data Viusal Analytics with vtk & scipy & plotly in python
