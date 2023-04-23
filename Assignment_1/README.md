@@ -1,5 +1,5 @@
 ## 1. Data Query/Processing Task: 
-# Print the following information about the dataset:
+### Print the following information about the dataset:
 * Number of cells in the dataset
 * The dimensions of the dataset
 * The number of points present in the uniform grid of the data. (Think about the relationship between the total number of points and the data dimension)
@@ -14,7 +14,7 @@ Note that, the cell id in your program should be a parameter and if the user cha
 * Print the data/attribute value (Pressure) for all the four vertices of the extracted cell.
 * Compute and print the mean (average) Pressure value at the cell center by averaging Pressure values from the four cell vertices.
 
-# 2. Visualization Task:
+## 2. Visualization Task:
 Assuming you can access the information for the above task, you already know the coordinates of the four corner vertices of the cell that you have 
 extracted with cell id=0. The coordinates are 3D points with a constant Z coordinate value=25. Now create a new VtkPolyData object, add these 4 points 
 into the VtkPolyData and specify a separate color for each point. For example, you can represent the red color as (255,0,0) as an RGB 3-value tuple. For help assign a color to the points, you can consult the ColoredTriangle example [1] as a reference. Next, use vtkVertexGlyphFilter() to create visual representations for each point in the form of a Vertex Glyph. Finally, use VTK mapper, actor, and renderer to show the output of the vtkVertexGlyphFilter() as points in the screen. If you are doing it right, your output should look like the following image. Note that you may have different colors for vertices depending on what color you have assigned to them in your code.
