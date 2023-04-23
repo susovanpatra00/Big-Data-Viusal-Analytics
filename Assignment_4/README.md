@@ -7,8 +7,10 @@ Here are the tasks:
 * You should submit a Python script that performs sampling for a single sampling percentage. Your Python script should take two input parameters: (1) sampling percentage, (2) reconstruction method: {nearest, linear}. Your script should output a *.vti file, which is the reconstructed data and a *.vtp file, which contains the sampled points as a VTKPolyData. Your output files should be readable by ParaView.
 
 * Use the following function to compute SNR. The first parameter is a numpy array containing ground truth data values and the second parameter is a numpy array that contains reconstructed data values in same order.
-**def compute_SNR(arrgt, arr_recon):
+```
+def compute_SNR(arrgt, arr_recon):
     diff = arrgt - arr_recon
     sqd_max_diff = (np.max(arrgt) - np.min(arrgt)) ** 2
     snr = 10 * np.log10(sqd_max_diff / np.mean(diff ** 2))
-    return snr**
+    return snr
+```
